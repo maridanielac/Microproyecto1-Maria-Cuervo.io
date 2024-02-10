@@ -16,24 +16,72 @@
         </center>
     </div>
     <div class="form">
+        
         <div class="boton">
             <!--<img src="">-->
+            <center>
+                <h4 align>Nueva Partida</h4>
+            </center>
             <input class="input" id="nombre1" placeholder="Jugador 1" required><br>
             <input class="input" id="nombre2" placeholder="Jugador 2" required><br>
             <input class="input" id="nombre3" placeholder="Jugador 3" required><br>
             <input class="input" id="nombre4" placeholder="Jugador 4" required><br>
-            <h4 style="font-size: small; font-family: 'Courier New', Courier, monospace;">Ingrese el tamaño del cartón  <input type="text"  name="tamano" id="tamano" placeholder="opciones válidas: 3, 4 o 5" size="100"><button type="button" onclick="opcion()">seleccionar</button> </h4> 
-            <button  id="ipartida" >Iniciar partida</button>
+            <h1 style="font-size: small; font-family: 'Courier New', Courier, monospace;">Ingrese el tamaño del cartón   </h1> 
+            <button class="b-tablero" id="b3" onclick="">3x3</button>
+            <button class="b-tablero" id="b4">4x4</button>
+            <button class="b-tablero" id="b5">5x5</button>
+            <br></br>
+            <button  class="ipartida" id="ipartida">Iniciar partida</button>
 
         </div>
     </div>
-        <button>j</button>
-    <div>
-        <!-- Fila 1 -->
-        
+
+    <div class="tab">
+        <button id="o1" class="tablinks" onclick="openTab(event,'juga1')">Vista Jugador 1</button>
+        <button id="o2" class="tablinks" onclick="openTab(event,'juga2')">Vista Jugador 2</button>
+        <button id="o3" class="tablinks" onclick="openTab(event,'juga3')">Vista Jugador 3</button>
+        <button id="o4" class="tablinks" onclick="openTab(event,'juga4')">Vista Jugador 4</button>
+
     </div>
-    
-    
-    
+
+    <!--Tab contenido-->
+    <div id="juga1" class="tabcontent">
+        <h3>JUGADOR 1</h3>
+        <p>Lorem </p>
+
+        <main class="board">
+            <!-- Fila 1 -->
+            
+            <div class="board__cell"></div>
+            <div class="board__cell"></div>
+            <div class="board__cell"></div>
+            
+            <div class="board__cell"></div>
+            <div class="board__cell"></div>
+            <div class="board__cell"></div>
+            
+            <div class="board__cell"></div>
+            <div class="board__cell"></div>
+            <div class="board__cell"></div>   
+            
+          </main>
+    </div>
+    <div id="juga2" class="tabcontent">
+        <h3>JUGADOR 2</h3>
+        <p>Lorem </p>
+    </div>
+    <div id="juga3" class="tabcontent">
+        <h3>JUGADOR 3</h3>
+        <p>Lorem </p>
+    </div>
+    <div id="juga4" class="tabcontent">
+        <h3>JUGADOR 4</h3>
+        <p>Lorem </p>
+    </div>
+
+    <div>
+        <h4>hola</h4>
+    </div>
+   
 </body>
 </html>

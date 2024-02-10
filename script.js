@@ -15,26 +15,28 @@ document.addEventListener('DOMContentLoaded', function(){
         alert("El formulario se ha enviado correctamente.");
         document.write(jugador1,"<br>");
         document.write(jugador2,"<br>");
+        document.write(jugador3,"<br>")
+        document.write(jugador4,"<br>")
     })
     
     
-    document.write(jugador2,"<br>")
-    document.write(jugador3,"<br>")
-    document.write(jugador4,"<br>")
+    
 
     
 
 });
 
-function opcion(){
-    var taman=document.getElementById("tamano").value;
-    if (taman!= "3" | taman!= "3"| taman!= "3"){
-        alert("Por favor ingresa un tamaño válido entre 3 y 5");
-    }
+function openTab(evt,tecnologia){
+    document.getElementById('juga1').style.display ='none';
+    document.getElementById('juga2').style.display ='none';
+    document.getElementById('juga3').style.display ='none';
+    document.getElementById('juga4').style.display ='none';
 
-}
+    document.getElementsByClassName("tablinks")[0].className = "tablinks";
+    document.getElementsByClassName("tablinks")[1].className = "tablinks";
+    document.getElementsByClassName("tablinks")[2].className = "tablinks";
+    document.getElementsByClassName("tablinks")[3].className = "tablinks";
 
-function verJugador1(){
-    document.write(jugador1);
-
+    document.getElementById(tecnologia).style.display = "block";
+    evt.currentTarget.className += "active"; 
 }
