@@ -17,16 +17,17 @@
     align-items: center;
     margin-left: auto;
     margin-left: auto;
-    padding: 8% 16%;
-    font-size: 2rem;
+    padding: 2% 16%;
+    font-size: 1rem;
     cursor: pointer;
     text-align: center;
+    background-color: beige;
 }
 input {
     padding: 10px;
     width: 30%;
-    margin: 3%;
-    border-radius: 4px;
+    margin: 4%;
+    border-radius: 30px;
     background-color: white;
-    color: #333;rgb(162, 216, 197)rgb(98, 197, 162)rgb(119, 197, 169)rgb(227, 237, 234)
-  }
+    color: #333;rgb(162, 216, 197)rgb(98, 197, 162)rgb(119, 197, 169)rgb(227, 237, 234);
+}
