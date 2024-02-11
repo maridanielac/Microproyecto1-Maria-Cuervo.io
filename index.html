@@ -9,12 +9,34 @@
 </head>
 <body>
     
-    <div id="title"> BINGO</div>
+    <div id="title" src> BINGO</div>
     <div>
         <center>
             <h4 align>Total de Victorias Acumuladas</h4>
+            <table id="tablaVictorias">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Victorias</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se generará dinámicamente la tabla de usuarios y sus victorias -->
+                </tbody>
+            </table>
+            <select id="puntajes">
+                <h3>Aqui se muestran los puntajes</h3>
+                <!-- Aquí se mostrarán las opciones generadas dinámicamente por JavaScript -->
+            </select>
         </center>
     </div>
+
+    <script>
+        // Llamar a la función cargarUsuarios después de que el DOM se haya cargado
+        document.addEventListener('DOMContentLoaded', function() {
+            cargarUsuarios();
+        });
+    </script>
     <div class="form">
         
         <div class="boton">
@@ -35,6 +57,19 @@
 
         </div>
     </div>
+    
+    <center>
+        <h2>Dashboard Bingo</h2>
+        <button id="mostrarCarton" class="disem">Mostrar Cartón</button>
+        <button id="sacarNumero" class="disem">Sacar Número de Bingo</button>
+        <button id="reiniciarJuego" class="disem">Reiniciar Juego</button>
+        <div id="numeroExtraido" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; "></div>
+        
+        <p id="turno">Turno: 0</p>
+
+        
+    </center>
+    
 
     <div class="tab">
         <button id="o1" class="tablinks" onclick="openTab(event,'juga1')">Vista Jugador 1</button>
@@ -44,44 +79,27 @@
 
     </div>
 
+   
+    
     <!--Tab contenido-->
     <div id="juga1" class="tabcontent">
-        <h3>JUGADOR 1</h3>
-        <p>Lorem </p>
-
-        <main class="board">
-            <!-- Fila 1 -->
-            
-            <div class="board__cell"></div>
-            <div class="board__cell"></div>
-            <div class="board__cell"></div>
-            
-            <div class="board__cell"></div>
-            <div class="board__cell"></div>
-            <div class="board__cell"></div>
-            
-            <div class="board__cell"></div>
-            <div class="board__cell"></div>
-            <div class="board__cell"></div>   
-            
-          </main>
+        <div center id="carton1"></div>
+       
     </div>
     <div id="juga2" class="tabcontent">
-        <h3>JUGADOR 2</h3>
-        <p>Lorem </p>
+        <div id="carton2"></div>
+        
     </div>
     <div id="juga3" class="tabcontent">
-        <h3>JUGADOR 3</h3>
-        <p>Lorem </p>
+        <div id="carton3"></div>
+        
     </div>
     <div id="juga4" class="tabcontent">
-        <h3>JUGADOR 4</h3>
-        <p>Lorem </p>
+        <div id="carton4"></div>
+        
     </div>
 
-    <div>
-        <h4>hola</h4>
-    </div>
+    
    
 </body>
 </html>
